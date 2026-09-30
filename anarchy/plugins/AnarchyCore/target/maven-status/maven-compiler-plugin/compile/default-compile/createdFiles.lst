@@ -1,0 +1,14 @@
+ru/anarchy/core/AnarchyUtil.class
+ru/anarchy/core/AnarchyCore.class
+ru/anarchy/core/DataStore.class
+ru/anarchy/core/AnarchyManager$1.class
+ru/anarchy/core/ChestManager.class
+ru/anarchy/core/AnarchyManager.class
+ru/anarchy/core/ChestManager$OpenChest.class
+ru/anarchy/core/Settings.class
+ru/anarchy/core/ChestManager$ChestHolder.class
+ru/anarchy/core/PveManager.class
+ru/anarchy/core/Msg.class
+ru/anarchy/core/CoreCommands.class
+ru/anarchy/core/DrillManager.class
+ru/anarchy/core/PveManager$1.class

@@ -1,0 +1,64 @@
+name: AnarchyCore
+version: '1.0.0'
+main: ru.anarchy.core.AnarchyCore
+api-version: '1.16'
+author: AnarchyTeam
+description: Ядро профессионального анархия-сервера (Paper 1.16.5): PvE 1.8, буры, многостраничные сундуки.
+website: https://example.org
+
+commands:
+  spawn:
+    description: Телепорт на спавн
+    usage: /spawn
+  home:
+    description: Телепорт домой
+    usage: /home [имя]
+  sethome:
+    description: Установить дом
+    usage: /sethome [имя]
+  delhome:
+    description: Удалить дом
+    usage: /delhome <имя>
+  back:
+    description: Вернуться на прошлое место
+    usage: /back
+  tpdeath:
+    aliases: [deathloc]
+    description: Телепорт на место последней смерти
+    usage: /tpdeath
+  coords:
+    aliases: [xyz, locate]
+    description: Показать координаты
+    usage: /coords
+  drill:
+    description: Управление бурами
+    usage: /drill <mode|give> ...
+    permission: anarchy.drill
+    permission-message: &cНет прав.
+  chestinfo:
+    description: Информация о многостраничном сундуке
+    usage: /chestinfo
+  anarchy:
+    description: Информация о сервере
+    usage: /anarchy
+  pve:
+    description: Статус PvP/PvE (реген)
+    usage: /pve
+
+permissions:
+  anarchy.*:
+    description: Все права анархия-ядра
+    default: op
+    children:
+      anarchy.bypass: true
+      anarchy.admin: true
+      anarchy.drill: true
+  anarchy.bypass:
+    description: Обход защиты спавна
+    default: op
+  anarchy.admin:
+    description: Выдача буров и админ-функции
+    default: op
+  anarchy.drill:
+    description: Использование команд буров
+    default: true
