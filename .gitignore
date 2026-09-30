@@ -1,0 +1,13 @@
+# Java/Maven build artifacts
+target/
+*.class
+*.jar
+!anarchy/server/cache/*.jar
+!anarchy/server/paper-1.16.5-794.jar
+
+# Logs and temp files
+*.log
+server-boot.log
+
+# Environment/Sensitive
+eula.txt
